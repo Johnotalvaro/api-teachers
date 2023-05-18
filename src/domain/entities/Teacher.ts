@@ -3,7 +3,7 @@ export class Teacher {
         public name: string,
         public description: string,
         public email: string,
-        public birthDate: string,
+        public birthDate: Date,
         public id?: string,
     ) {
         

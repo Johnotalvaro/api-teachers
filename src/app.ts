@@ -1,4 +1,5 @@
 import { Server } from './server';
+
+ const server = new Server;
+ server.start();
  
-const server = new Server();
-server.start(); 

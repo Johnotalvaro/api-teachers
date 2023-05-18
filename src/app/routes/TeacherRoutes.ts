@@ -16,7 +16,9 @@ export class TeacherRoutes {
     }
 
     private initRoutes(): void {
-        this._router.post('/create', this._teacherController.create.bind(this._teacherController) );
+
+        // Con bind pasa el contexto-scope
+        this._router.post('/create', this._teacherController.create.bind(this._teacherController));
     }
 
     public getRoutes(): Router {

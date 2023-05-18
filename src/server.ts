@@ -2,7 +2,6 @@ import { TeacherRoutes } from './app/routes/TeacherRoutes';
 import express from 'express';
 import config from './config';
 
-
 export class Server {
 
     private _app: express.Application;
@@ -19,8 +18,8 @@ export class Server {
     }
 
     private middlewares(): void {
-        this._app.use(express.json());
-        this._app.use(express.urlencoded({ extended: false }));
+        this._app.use( express.json() );
+        this._app.use( express.urlencoded({ extended: false }) );
     }
 
     private routes(): void {
@@ -33,4 +32,5 @@ export class Server {
             console.log(`Server corriendo por el puerto ${config.port}`);
         });
     }
+
 }
